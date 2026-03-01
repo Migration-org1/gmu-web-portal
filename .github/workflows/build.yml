@@ -1,0 +1,10 @@
+name: Frontend Build
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Installing dependencies"
+      - run: echo "Building project"
+      - run: echo "Token is ${{ secrets.FRONTEND_TOKEN }}"
